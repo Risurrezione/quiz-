@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coral Quiz</title>
+</head>
+<body>
+Q1. Perche' vuoi essere uno staff?
+<input type="radio" name="domanda1" id="correct1" perche' e' la mia passione<br>
+<input type="radio" name="domanda1"perche' lo voglio e basta<br>
+<input type="radio" name="domanda1"non lo so<br>
+<input type="radio" name="domanda1"lo flexo<br>
+
+Q2. anni?
+<input type="radio" name="domanda2" id="correct2" 12<br>
+<input type="radio" name="domanda2" id="correct2" 13<br>
+<input type="radio" name="domanda2" id="correct2" 14<br>
+<input type="radio" name="domanda2" id="correct2" di piu'<br>
+
+Q3. Cosa ha di diverso dagli altri candidati?
+<input type="radio" name="domanda3"Sono piu' bravo a giocare<br>
+<input type="radio" name="domanda3"non flexo il rank<br>
+<input type="radio" name="domanda3" id="correct3" so fare controlli<br>
+<input type="radio" name="domanda3"non lo so'<br>
+
+<input type="submit" name="submit" value="invia" onclick="
+    result()">
+
+<script type="text/javascript">
+    function result() {
+        // body
+        var score=0;
+        if (document.getElementById(correct1).checked)
+        {
+            score++;
+        }
+        if (document.getElementById(correct2).checked)
+        {
+            score++;
+        }
+    }if (document.getElementById(correct3).checked)
+        {
+            score++;
+        }
+        document.write("Il tuo punteggio e':" +score)
+</script>
+</body>
+</html>
